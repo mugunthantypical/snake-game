@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <meta name="description" content="A simple browser-based snake game." />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Snake</h1>
+
+      <div class="hud">
+        <p class="hud__item">
+          Score: <output id="score" aria-live="polite">0</output>
+        </p>
+        <p class="hud__item">
+          Best: <output id="best">0</output>
+        </p>
+      </div>
+
+      <canvas
+        id="board"
+        width="400"
+        height="400"
+        role="img"
+        aria-label="Snake game board"
+      >
+        Your browser does not support the canvas element, which this game
+        requires.
+      </canvas>
+
+      <p id="status" class="status" role="status">Press Space or tap Start to play.</p>
+
+      <div class="controls">
+        <button id="start" type="button">Start</button>
+        <button id="pause" type="button">Pause</button>
+      </div>
+
+      <p class="help">
+        Move with the arrow keys or W A S D, or swipe on the board. Press Space
+        to pause or resume.
+      </p>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
