@@ -44,20 +44,6 @@ Eat the red cell to score a point and grow by one segment. Hitting a wall or you
 
 Tuning lives in `src/config.js`: grid dimensions, cell size, speed in cells per second, starting length and colours.
 
-## Deploy
-
-Deployment to GitHub Pages runs automatically on every push to `main`.
-
-One-time setup:
-
-1. Push the repo to GitHub.
-2. Go to **Settings → Pages** and set **Source** to **GitHub Actions**.
-3. Push to `main`. The workflow publishes the repo root as-is.
-
-The site will be served at `https://<user>.github.io/<repo>/`. All asset paths in `index.html` are relative (`./src/...`), so it works under a subpath without extra configuration.
-
-Netlify, Vercel or Cloudflare Pages also work: point them at this repo, leave the build command empty and set the publish directory to the repo root.
-
 ## License
 
 MIT
